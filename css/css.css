@@ -1,0 +1,77 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+ :root {
+  --tekstfarve: rgb(0, 0, 0);
+  --beskrivelsesTekst: rgb(35, 31, 32);
+ }
+
+/* Use your variables on elements */
+ main {
+   
+ }
+
+ .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 200px 20px;
+ }
+
+ #sallingLogoId {
+  width: 150px;
+  height: 62px;
+ }
+
+ #soegebarId {
+  width: 475px;
+  height: 62px;
+ }
+
+ #favoritterId {
+  width: 220px;
+  height: 62px;
+ }
+
+ #menuUnderHeader {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Poppins, sans-serif; /* Kan denne angives som variable */
+  font-size: 16px;
+ }
+
+ a {
+  text-decoration: none;  /* Fjerner underline fra links */ 
+  color: black; /* Gør skriftfarven sort */
+ }
+
+ a:hover {
+  font-weight: 500;  /* Gør skiften federe når man holder musen over */
+ }
+
+ #oplevSalling { /* Dette link skal have en let skygge over sig ved hover */
+   font-weight: 350;
+ }
+
+ #produktmaerkeId {
+    font-family: Playfair Display, sans-serif;
+    font-size: 15px;
+    color: rgb(123, 121, 121)
+ }
+
+ #beskrivelseAfProduktId {
+   font-family: Poppins, sans-serif;
+   font-size: 22px;
+   color: var(--beskrivelsesTekst);
+   margin: 8px 0px 40px; /* top, right, bottom, left */
+   font-weight: 350; /* Hvor tyk skriften skal være - er mere præcis end lighter, bold og bolder */
+ }
+
+ p { /* Skal gøre koden simpel, så alle paragraphs har samme font */
+   font-family: Poppins, sans-serif;
+ }
+
+
+ 
