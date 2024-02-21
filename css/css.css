@@ -73,5 +73,13 @@
    font-family: Poppins, sans-serif;
  }
 
+ #farveId, #størrelseId, #lagerstatusId {
+    font-weight: bold;
+ }
+
+ #produktinformationId {
+  
+ }
+
 
  
