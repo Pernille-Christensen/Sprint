@@ -5,7 +5,6 @@
 
 /* Define variables in the :root */
  :root {
-  --tekstfarve: rgb(0, 0, 0);
   --beskrivelsesTekst: rgb(35, 31, 32);
   --tilgaengeligIkon: rgb(101, 193, 121); 
  }
@@ -17,13 +16,13 @@
 
  .header {
   display: flex;
-  justify-content: space-between;
-  padding: 16px 100px 20px;
+  justify-content: space-between; /* Elementer fordeles lige - start, midt, slut */
+  padding: 16px 100px 20px; /* top, right, bottom, left */
  }
 
  #sallingLogoId {
-  width: 150px; /* 150px */
-  height: 62px; /* 62 */
+  width: 150px;
+  height: 62px;
  }
 
  #soegebarId {
@@ -31,7 +30,14 @@
   height: 62px;
  }
 
- #favoritterId {
+ #loopId {
+  display: none; /* Billedet med loop vises ikke ved stor skærm */
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+ }
+
+ #favoritterId { /* Skal forståes som øverste højre hjørne med favoritter, log in og kurv */
   width: 220px;
   height: 62px;
  }
@@ -45,19 +51,19 @@
 
  a {
   text-decoration: none;  /* Fjerner underline fra links */ 
-  color: black; /* Gør skriftfarven sort */
+  color: black; /* Gør skriftfarven sort, så den ikke bliver lilla */
  }
 
  a:hover {
   font-weight: 500;  /* Gør skiften federe når man holder musen over */
  }
 
- #oplevSalling { /* Dette link skal have en let skygge over sig ved hover */
+ #oplevSalling { /* HEP!!!! Dette link skal have en let skygge over sig ved hover */
    font-weight: 350;
  }
 
  #produktmaerkeId {
-    font-family: Playfair Display, sans-serif;
+    font-family: Playfair Display, sans-serif; /* ROYAL COPENHAGEN */
     font-size: 17px;
     color: rgb(123, 121, 121)
  }
@@ -67,25 +73,19 @@
    font-size: 26px;
    color: var(--beskrivelsesTekst);
    margin: 8px 0px 40px; /* top, right, bottom, left */
-   font-weight: 350; /* Hvor tyk skriften skal være - er mere præcis end lighter, bold og bolder */
+   font-weight: 350; /* Hvor tyk skriften skal være - er mere specifik end lighter, bold og bolder */
  }
-
+ 
  p { /* Skal gøre koden simpel, så alle paragraphs har samme font */
    font-family: Poppins, sans-serif;
  }
 
-/*
- #farveId, #stoerrelseId, #lagerstatusId {
-    font-weight: ;
- }
- */
-
- #groenPletId {
-  color: var(--tilgaengeligIkon);
+ #groenPletId { /* Plet ved lagerstatus, der er grøn ved en postitiv lagerstatus */
+  color: var(--tilgaengeligIkon); /* Gør pletten grøn */
   font-size: large;
  }
 
- #butikkerId {
+ #butikkerId { /* Laver underline under tekst */
   text-decoration: underline;
  }
 
@@ -115,20 +115,36 @@
   height: auto;
  }
 
- .container {
+ .container { /* Indeholder alt det, der ikke står i header eller er menulinjen */
   margin-top: 65px; /* Afstanden fra menulinjen ned til teksten Royal Copenhagen og billedet  */
   display: flex;
   justify-content: space-center;
   gap: 80px; /* Mellemrummet mellem billede og information */
  }
 
- #venstreSideId {
+ #varebilledeId {
   margin-left: 200px; /* 200 */
  }
 
- #hoejreSideId {
-  
- }
+/* METODER */
+ /* Nedstående får searchbar til at forsvine og et loop vises ved skærme mindre end 1100px */
+ @media only screen and (max-width: 1100px) {
+  #soegebarId {
+    display: none;
+  }
+
+  #favoritterId {
+    display: none;
+  }
+
+  #loopId {
+    display: block;
+  }
+
+  }
+
+  /* Metode-slut */
+
  
 /* BRUGT TIL AT LAVE BILLEDET LEVERINGSMULIGHEDER
  #test {
