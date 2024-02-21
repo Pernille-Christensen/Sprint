@@ -46,20 +46,29 @@
 </header>
 
   <main>
-      <div> <!-- Har klassen row i Undersøg -->
+    <div class="container">
+      <div id="venstreSideId"> <!-- Har klassen row i Undersøg -->
         <img src="images/julekopper.png" alt="Billede af Royal Copenhagen Julekopper">
+      </div>
+
+      <div class="hoejreSideId">
         <a id="produktmaerkeId" href="https://salling.dk/brands/royal-copenhagen/c-1389/">ROYAL COPENHAGEN</a> <!-- Er et link til alle mærkets produkter -->
-        <h1 id="beskrivelseAfProduktId">Stjerne Riflet 2-pak Krus, 33cl</h1>
+        <h1 id="beskrivelseAfProduktId">Stjerne Riflet 2-pak Krus, 33 cl</h1>
         <p><strong>Farve: </strong>Grøn</p>
         <p><strong>Størrelse: </strong>33cl</p>
-        <p><strong>Lagerstatus: </strong>På lager online og i <span>2 butikker</span> </p><span id="butikkerId2"> 2 butikker </span>
+        <p><strong>Lagerstatus: </strong> <span id="groenPletId">●</span> På lager online og i <span id="butikkerId">2 butikker</span> </p>
         <p id="prisId">649 kr.</p>
-        <img id="laegVareIKurvId" src="images/laegIKurvKnap.png" alt="Læg varen i kurven">
-        <img id="leveringsmulighederId" src="images/leveringmuligheder.png" alt="Leveringsmuligheder og anden information">
+        <img id="laegVareIKurvId" src="images/laegIKurvKnap.png" alt="Læg varen i kurven"> <br>
+        <!-- Her skal kanppen til klik&hent være -->
+        <img id="leveringsmulighederId" src="images/leveringmuligheder.png" alt="Leveringsmuligheder og anden information"> <br> <!-- br lægger billederne under hinanden -->
+        <img id="produktbeskrivelseId" src="images/produktbeskrivelse.png" alt="Beskrivelse af produktet">
+      </div>
+    </div>
+        
 
 
         <!-- <p id="test">Afhent inden for to timer</p> --> <!-- BRUGT TIL AT LAVE BILLEDET LEVERINGSMULIGHEDER -->
-      </div>
+      
 
   </main>
   <script src="js/js.js"></script>
