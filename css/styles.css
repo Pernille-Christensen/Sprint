@@ -1,0 +1,134 @@
+
+/* alt indhold i body - generelt */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Skift til den ønskede skrifttype */
+  }
+
+  .background-image {
+    background-image: url('../images/Kurv-popup-fuldskarm.plusogminus.png'); /* .. er for at hoppe ud af mappen*/
+    background-size: cover; /* Tilpas størrelsen af baggrundsindholdet */
+    background-position: center; /* Centrer billedet på baggrund */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/* det hvide pop-up vindue - også kaldet "modal"*/
+  .modal {
+    width: 475px; /* Bredden på modalen */
+    height: 800px; /* Højden på modalen */
+    background-color: rgba(255, 255, 255, 0.9); /* Baggrundsfarven med gennemsigtighed */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999; /* Sørger for, at modalen vises over baggrunden */
+  }
+
+  .modal-content {
+    padding: 32px 40px; /* Indre hvide kant, på boksen */
+  }
+
+/* Tekst og kryds over varen */
+  .kryds {
+    max-width: 30px;
+    height: auto;
+    cursor: pointer;
+  }
+
+/* alt indhold i flexboks med varen - generelt */
+  .flex-container {
+    display: flex;
+    justify-content: space-between; /* Fordeler elementerne jævnt med lige mellemrum mellem dem */
+    align-items: flex-end; /* Centrerer elementerne lodret*/
+    flex-direction: row; /* Elementerne vil blive placeret i en række */
+    align-items: center; /* Kryds på linje med'Tilføjet til kurv' */
+  }
+
+  .flex-item {
+    flex: 1; /* Elementerne skal have samme fleksibilitet, så de fylder tilgængelig plads */
+    margin: 10px; /* Tilføj lidt mellemrum mellem elementerne */
+    flex-grow: 1; /* Alle elementer vil tage op den tilgængelige plads */
+  }
+
+  .flex-item img {
+    max-width: 100%; /* Sørg for, at billeder ikke strækker sig ud over deres container */
+    height: auto; /* Skaler billeder proportionalt */
+    align-items: baseline;
+  }
+
+  .specielt-billede { /* Specifikke egenskaber pris-billedet */
+    width: 150px;
+    height: auto;
+    justify-content: flex-end;
+    margin-top: 38px;
+  }
+
+  /* Skrifttyper på Royal Copenhagen og Stjerne Riflet */
+
+  #overskriftRC {
+    font-family: Playfair Display, sans-serif;
+    font-size: 12px;
+    color: rgb(123, 121, 121);
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+
+  #overskriftSR {
+    font-family: Poppins, sans-serif;
+    color: rgb(35, 31, 32);
+    font-size: 15px;
+    font-weight: 550;
+  }
+
+  #farvePaaKop {
+    font-family: Poppins, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+/* Specifikationer til tekststykkerne, i flexboksen */
+  .flex-item-middle {
+    flex-grow: 2; /* Andet element (tekststykket i midten) tager dobbelt så meget plads */
+    text-align: left; /* Venstrejusterer teksten */
+  }
+
+  /* Ændring af bundmargin mellem tekststykkerne */
+  .flex-item-middle h5,
+  .flex-item-middle h4,
+  .flex-item-middle h6 {
+      margin-top: 5px; 
+      margin-bottom: 5px; 
+  }
+
+
+/* Tekst nedenunder flexboksen - generelt */
+  #bemaerk {
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+  }
+  
+  p {
+    margin: 0% 0% 4%;
+  }
+
+  #streg {
+    color: rgb(123, 121, 121);
+    font-weight: 200px;
+  }
+
+  
+/* Knapper nedenunder flexboksen - generelt */
+  .knapper {
+    flex-grow: 1;
+    width: 95%;
+    height: auto;
+    margin: 10px; /* Den ønskede margin mellem knapperne */
+    margin-left: 0%; /* Ønsker ingen margin i venstre side, men helt højrestillet billede/knap */
+    justify-content: space-between
+  }
+

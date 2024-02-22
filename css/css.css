@@ -7,6 +7,8 @@
  :root {
   --beskrivelsesTekst: rgb(35, 31, 32);
   --tilgaengeligIkon: rgb(101, 193, 121); 
+  --color-yellow: #ffe600;
+  --color-secondary-light: #9bb0a4;
  }
 
 /* Use your variables on elements */
@@ -126,6 +128,31 @@
   margin-left: 200px; /* 200 */
  }
 
+/* KNAP */
+  #buttonId {
+    background-color:#9bb0a4;
+    color: black;
+    padding: 10px 20px; /* Sørger for knappens størrelse */
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    bottom: 40px; /* Afstand fra bunden af skærmen */
+    right: 40px; /* Afstand fra højre side af skærmen */
+    cursor: pointer; /* Ændrer musen over knappen, så det er tydeligt, at det er et link */
+  }
+
+#tekstIKnapId {
+  display: block;
+  width: 100%;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 14%;
+  }
+
 /* METODER */
  /* Nedstående får searchbar til at forsvine og et loop vises ved skærme mindre end 1100px */
  @media only screen and (max-width: 1100px) {
@@ -144,6 +171,16 @@
   }
 
   /* Metode-slut */
+
+  /* KURVEN */
+
+  #kurvMedKrusId {
+    margin-top: 4%;
+    width: 100%;
+    height: auto;
+  }
+
+
 
  
 /* BRUGT TIL AT LAVE BILLEDET LEVERINGSMULIGHEDER
